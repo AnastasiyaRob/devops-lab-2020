@@ -115,4 +115,7 @@ sed -i -e '397s!//!!' /etc/phpldapadmin/config.php
 sed -i -e '398s!^!//!' /etc/phpldapadmin/config.php
 sed -i -e '/local/s!local!all granted!' /etc/httpd/conf.d/phpldapadmin.conf
 sudo systemctl start httpd
+unset passwdhash
+unset passwd
+rm -rf *.ldif
    
