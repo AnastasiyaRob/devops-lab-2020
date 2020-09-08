@@ -1,0 +1,9 @@
+name = "ldap-server"
+machine_type ="custom-1-4608-ext"
+zone = "us-central1-c"
+tags = ["ldap-server"]
+image ="centos-cloud/centos-7"
+size = "35"
+network = "default"
+disk_type ="pd-ssd"
+script = "./startup.sh"
