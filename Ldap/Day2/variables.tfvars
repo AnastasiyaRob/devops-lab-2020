@@ -1,0 +1,12 @@
+server_name = "ldap-server"
+client_name = "ldap-client"
+machine_type ="custom-1-4608-ext"
+zone = "us-central1-c"
+server_tags = ["ldap-server"]
+client_tags = ["ldap-client"]
+image ="centos-cloud/centos-7"
+size = "35"
+network = "default"
+disk_type ="pd-ssd"
+server_script = "./startup-server.sh"
+region = "us-central1"
