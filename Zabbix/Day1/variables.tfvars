@@ -1,0 +1,13 @@
+zabbix_name = "zabbix"
+agent_name = "agent"
+machine_type ="custom-1-4608-ext"
+zone = "us-central1-c"
+zabbix_tags = ["zabbix"]
+agent_tags = ["agent"]
+image ="centos-cloud/centos-7"
+size = "20"
+network = "default"
+disk_type ="pd-ssd"
+zabbix_script = "./zabbix.sh"
+agent_script =  "./agent.sh"
+region = "us-central1"
